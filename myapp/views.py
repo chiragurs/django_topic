@@ -46,3 +46,5 @@ def display_webpages(request,id):
     webpage=Webpage.objects.filter(id=id)
     return render(request,"display_webpage.html",context={"webpage":webpage})
     
+def filter_demo(request):
+    return render(request,"filter_demo.html",{'data':"hello",'num':12})

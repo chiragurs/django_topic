@@ -25,5 +25,6 @@ urlpatterns = [
     path('display_topic/<id>',views.display_topics,name="display_topic"),
     path('display_web/',views.display_webpage,name="display_webpage"),
     path('display_web/<id>',views.display_webpages,name="display_webpage"),
+    path('filter_demo/',views.filter_demo,name="filter_demo"),
 ]
 

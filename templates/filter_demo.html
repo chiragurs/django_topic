@@ -1,0 +1,23 @@
+
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    {% if data|length > 10 %}
+        <h1>{{data|upper}} is greater than 10 characters</h1>
+    {% else %}
+      <h1>data is less than 10 char</h1>
+    {% endif %}
+    <h2>{{data|upper}}</h2>
+    <h2>{{data|length|add:"10"}}</h2>
+    <h2>{{ data|title }}</h2>
+    <h1>{{data|is_lower}}</h1>
+    <h1>{{data|is_upper}}</h1>
+    <h2>{{num|plural:"apple"}}</h2>
+</body>
+</html>
